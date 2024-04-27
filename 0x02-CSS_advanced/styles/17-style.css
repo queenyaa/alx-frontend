@@ -42,11 +42,6 @@ a {
     color: #d73953;
 }
 
-/* class section-tagline foreground color*/
-.section-tagline {
-    color: #d73953;
-}
-
 /* Define custom properties */
 :root {
     --color-primary: #d73953;
@@ -89,7 +84,7 @@ a {
     --section-title-color: var(--color-black);
 
     /* define custom properties */
-    --sectino-padding: 5rem 0;
+    --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
     --section-footer-padding: 3rem 0 0;
@@ -117,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-    padding: ver(--section-padding);
+    padding: var(--section-padding);
 }
 
 .section-header {
@@ -135,17 +130,17 @@ h1, h2, h3, h4, h5, h6 {
     text-align: var(--section-footer-align);
 }
 
+
+/* class section-tagline foreground color*/
+.section-tagline {
+    color: #d73953;
+}
+
 .section-tagline {
     /* target the section-tagline class and apply style */
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
-}
-
-.container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .section-title {
@@ -155,6 +150,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
     margin: var(--section-title-margin);
     color: var(--section-title-color);
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a:link {
