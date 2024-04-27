@@ -122,23 +122,23 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--section-title-color);
 }
 
-a[href] {
+a:link {
     /* target anchor elements with hyperlinks */
     color: var(--text-color);
     text-decoration: none;
 }
 
-a[href]:visited {
+a:visited {
     /* target visited state for anchor elements */
     font-style: italic;
 }
 
-a[href]:hover {
+a:hover {
     /* hovering */
     text-decoration: underline;
 }
 
-a[href]:active {
+a:active {
     /* target active state */
     background-color: var(--color-light-grey);
 }
