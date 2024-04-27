@@ -1,0 +1,157 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    /* fro smooth scrolling */
+    scroll-behavior: smooth;
+    /* set font size for HTML element % of its normal size */
+    font-size: 62.5%;
+}
+
+/* set foreground to this color */
+body {
+    color: #161616;
+    /* apply font to body*/
+    font-family: var(--font-family-base);
+    /* apply font-size-medium to body */
+    font-size: var(--font-size-medium);
+    /* set font-weight-regular for fonts */
+    font-weight: var(--font-weight-regular);
+    /* set min height of line boxes */
+    line-height: var(--line-height-base);
+}
+
+/* Set foreground to this color */
+a {
+    color: #161616;
+    /* Style anchor elements to remove text decoration */
+    text-decoration: none;
+}
+
+/* set display for class with visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* set class card-category foreground color*/
+.card-category {
+    color: #d73953;
+}
+
+/* class section-tagline foreground color*/
+.section-tagline {
+    color: #d73953;
+}
+
+/* Define custom properties */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+    /* define the font for root elements*/
+    /* Add Open Sans as the 1st choice font */
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* add Raleway as first choice */
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    /* define custom font-size properties */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* define custom font-weight properties */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* define custom properties for line heights */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    /* define custom property for section header alignment */
+    --section-header-align: center;
+
+    /* define custom property for section tagline transformation */
+    --section-tagline-transform: uppercase;
+
+    /* define custom properties */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+/* Reset color of section-tagline and card-category classes */
+.section-tagline,
+.card-category {
+    color: var(--color-primary);
+}
+
+/* reset color for body and anchor elements to text-color */
+body,
+a {
+    color: var(--text-color);
+}
+
+/* apply to headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    /* set font-weight-bold for headings */
+    font-weight: var(--font-weight-bold);
+}
+
+.section-header {
+    /* target the section header class and set horizontal alignment */
+    text-align: var(--section-header-align);
+}
+
+.section-tagline {
+    /* target the section-tagline class and apply style */
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    /* target the section-title class and apply styles */
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+a:link {
+    /* target anchor elements with hyperlinks */
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:visited {
+    /* target visited state for anchor elements */
+    font-style: italic;
+}
+
+a:hover {
+    /* hovering */
+    text-decoration: underline;
+}
+
+a:active {
+    /* target active state */
+    background-color: var(--color-light-grey);
+}
